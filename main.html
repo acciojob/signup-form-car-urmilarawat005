@@ -7,6 +7,81 @@
 </head>
 
 <body>
+	     <div class="form-container">
+        <h2>Signup Form</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Name">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label for="gender_m">
+                        <input type="radio" id="gender_m" name="gender" value="Male" required> Male
+                    </label>
+                    <label for="gender_f">
+                        <input type="radio" id="gender_f" name="gender" value="Female" required> Female
+                    </label>
+                </div>
+            </div>
+
+            <!-- Car Brands -->
+            <div class="form-group">
+                <label for="cars">Car Brands</label>
+                <select id="cars" name="cars" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Ford">Ford</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Honda">Honda</option>
+                </select>
+            </div>
+
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required placeholder="Age">
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+
+            <!-- Terms of Service -->
+            <div class="form-group">
+                <label for="tos">
+                    <input type="checkbox" id="tos" name="tos" required> I agree to the Terms of Service
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
